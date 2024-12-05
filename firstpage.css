@@ -1,0 +1,233 @@
+:root {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: "Parkinsans", sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #fff4f4a9;
+  width: 100%;
+  h1 {
+    color: #887927;
+    padding: 2rem;
+    width: 400px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 950px;
+    list-style: none;
+    padding: 2rem;
+    font-size: 1.8rem;
+  }
+  .dropdown {
+    position: relative;
+  }
+  .dropdown-menu {
+    opacity: 0;
+    position: absolute;
+  }
+  .dropdown-menu:hover {
+    opacity: 1;
+    display: block;
+    background-color: #fff4f4a9;
+    width: 200px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #887927;
+}
+
+a:hover {
+  color: gold;
+  text-shadow: 0 0.2rem 0.5rem gold;
+}
+
+.container {
+  height: 950px;
+  background-image: url(./images/fantasy-astral.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10rem;
+  .text {
+    color: #bbb9b0ec;
+    padding: 2rem;
+    text-shadow: 0 0 0.5rem #806d02;
+
+    h2 {
+      font-size: 4rem;
+      margin: 2rem 0;
+    }
+    pre {
+      font-size: 2rem;
+    }
+  }
+}
+.zodiac-circle {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  width: 800px;
+  height: 800px;
+  margin: 15rem auto;
+  animation: rund-zodiac 5s 1s infinite;
+  img {
+    width: 800px;
+    height: 800px;
+  }
+}
+@keyframes rund-zodiac {
+  from {
+    rotate: 360deg;
+  }
+}
+
+.zodiac-circle:hover {
+  transform: scale(1.05);
+  background: linear-gradient(red, blue, green, orange);
+}
+
+.zodiac-signs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  gap: 2rem;
+  width: 80%;
+  margin: 15rem auto;
+  padding: 10rem 0;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: orangered;
+    text-shadow: 0 0.2rem 0.2rem gray;
+  }
+}
+.zodiac {
+  width: 300px;
+
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  p {
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+  }
+}
+
+.zodiac:hover {
+  box-shadow: 0 0.2rem 0.5rem 0.1rem #806d02;
+  transform: scale(1.05);
+}
+
+.container-form {
+  color: #a3943e;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 15rem;
+  padding: 5rem;
+  h1 {
+    margin: 5rem;
+    color: #e9d358;
+    text-shadow: 0 0.2rem 0.3rem gold;
+  }
+}
+form {
+  width: 80%;
+  margin: 2rem auto;
+  height: 80rem;
+  font-size: 2rem;
+  div {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  legend {
+    padding: 2rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+  }
+  label {
+    display: flex;
+    justify-content: center;
+    color: #887927;
+    margin: 1rem;
+  }
+  input,
+  select {
+    padding: 2rem;
+    width: 50%;
+    background-color: #d1d1d1;
+    font-size: 1.8rem;
+    color: #75530b;
+  }
+  input:hover,
+  select:hover {
+    outline: 3px solid goldenrod;
+  }
+
+  .date input {
+    font-size: 2rem;
+  }
+  button {
+    width: 50%;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #d1d1d1;
+    a {
+      color: #75530b;
+    }
+  }
+  button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    outline: 3px solid goldenrod;
+  }
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin: 2rem 0.5rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .zodiac-signs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    flex-direction: column;
+  }
+}

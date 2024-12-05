@@ -1,0 +1,58 @@
+@use "mixins";
+@use "headers";
+
+body {
+  @include mixins.main;
+}
+.section-1 {
+  @include mixins.position;
+
+  img {
+    border-radius: 50%;
+    position: relative;
+    left: 40%;
+    width: 400px;
+    height: 400px;
+  }
+}
+#aries {
+  text-align: center;
+  padding-top: 2rem;
+  @include mixins.h2;
+}
+
+h2 {
+  @include mixins.h2;
+}
+
+p {
+  @include mixins.text;
+}
+.audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #887927;
+  margin: 10rem auto;
+  audio {
+    width: 30%;
+    padding: 2rem;
+  }
+  a {
+    font-size: 2rem;
+    color: #0e3363;
+    text-decoration: none;
+    text-shadow: 0 0.1rem 0.5rem green;
+  }
+}
+
+.coming-soon {
+  margin: 20rem;
+  margin-left: 25rem;
+}
+
+.birth-chart {
+  color: #887927;
+  text-align: center;
+  margin-top: 10rem;
+}

@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #d1cfcf;
+  width: 100%;
+  font-size: 1.8rem;
+  .logo {
+    padding: 2rem;
+    width: 400px;
+    margin-top: 2rem;
+
+    a {
+      font-weight: bold;
+      color: #887927;
+      text-decoration: none;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 950px;
+    list-style: none;
+    padding: 2rem;
+    a {
+      text-decoration: none;
+      color: #887927;
+    }
+  }
+  a:hover {
+    color: gold;
+    text-shadow: 0 0.2rem 0.5rem gold;
+  }
+}

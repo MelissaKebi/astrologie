@@ -1,0 +1,25 @@
+@mixin text {
+  font-size: 2rem;
+  color: #796809;
+}
+@mixin h2 {
+  color: #552513;
+  font-size: 3rem;
+  i {
+    padding-right: 0.5rem;
+  }
+}
+@mixin main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  overflow-x: hidden;
+  font-family: "Parkinsans", sans-serif;
+}
+
+@mixin position {
+  position: relative;
+  left: 10%;
+  top: 12rem;
+}
