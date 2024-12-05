@@ -101,7 +101,7 @@ a:hover {
 
 .zodiac-circle:hover {
   transform: scale(1.05);
-  background: linear-gradient(red, blue, green, orange);
+  background: linear-gradient(#ff3c00, #725401, #00d9ff, #0066ff);
 }
 
 .zodiac-signs {
