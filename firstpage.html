@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"  content="Astrology: Horoscope and Birth Chart with Zodiacs Signs"/>
+    <meta
+      name="description"
+      content="Astrology: Horoscope and Birth Chart with Zodiacs Signs"
+    />
     <title>Astrology</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monoton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Parkinsans:wght@300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -20,38 +23,39 @@
   <body>
     <header>
       <div>
-        <h1><i class="fa-solid fa-seedling fa-xl"></i>Astrology</h1>
+        <h1>
+          <i class="fa-solid fa-seedling fa=s"
+            ><a class="logo" href="#zodiac-circle">Astrology</a></i
+          >
+        </h1>
       </div>
       <nav>
         <ul>
           <li><a href="#zodiac-circle" target="_parent">Horoscope</a></li>
-          <li class="dropdown" >
-            <a  href="#all-zodiacs" target="_parent">Zodiac Sign</a>
+          <li class="dropdown">
+            <a href="#all-zodiacs" target="_parent" class="list">Zodiac Sign</a>
             <ul class="dropdown-menu">
-              <li><a href="./zodiacs/1-aries.html">Aries</a></li>
-              <li><a href="./zodiacs/2-taurus.html">Taurus</a></li>
-              <li><a href="./zodiacs/3-gemini.html">Gemini</a></li>
-              <li><a href="./zodiacs/4-cancer.html">Cancer</a></li>
-              <li><a href="./zodiacs/5-leo.html">Leo</a></li>
-              <li><a href="./zodiacs/6-virgo.html">Virgo</a></li>
-              <li><a href="./zodiacs/7-libra.html">Libra</a></li>
-              <li><a href="./zodiacs/8-scorplo.html">Scorplo</a></li>
-              <li><a href="./zodiacs/9-sagittarius.html">Sagittarius</a></li>
-              <li><a href="./zodiacs/10-capricorn.html">Capricorn</a></li>
-              <li><a href="./zodiacs/11-aquarius.html">Aquarius</a></li>
-              <li><a href="./zodiacs/12-pisces.html">Pisces</a></li>
+              <li><a href="#aries">Aries</a></li>
+              <li><a href="#taurus">Taurus</a></li>
+              <li><a href="#gemini">Gemini</a></li>
+              <li><a href="#cancer">Cancer</a></li>
+              <li><a href="#leo">Leo</a></li>
+              <li><a href="#virgo">Virgo</a></li>
+              <li><a href="#libra">Libra</a></li>
+              <li><a href="#scorplo">Scorplo</a></li>
+              <li><a href="#sagittarius">Sagittarius</a></li>
+              <li><a href="#capricorn">Capricorn</a></li>
+              <li><a href="#aquarius">Aquarius</a></li>
+              <li><a href="#pisces">Pisces</a></li>
             </ul>
           </li>
           <li>
-            <a href="meditation.html" target="_parent"
-              >Meditations</a
-            >
+            <a href="meditation.html" target="_parent">Meditations</a>
           </li>
           <li><a href="podcast.html" target="_parent">Podcast</a></li>
           <li>
             <a href="#birth-chart" target="_parent">Chart</a>
           </li>
-        </ul>   
         </ul>
       </nav>
     </header>
@@ -66,84 +70,86 @@ love, and peace...</pre
       </div>
     </section>
     <section class="zodiac-circle" id="zodiac-circle">
-      <div><a href="#">
-        <img src="./images/unnamed.png" alt="all-zodiacs" /></a></div>
+      <div>
+        <a href="#"> <img src="./images/unnamed.png" alt="all-zodiacs" /></a>
+      </div>
     </section>
     <!--  12 zodiac-signs -->
-    <section class="zodiac-signs" id="all-zodiacs">
-      <div class="zodiac">
-        <a href="./zodiacs/1-aries.html" target="_blank">
+    <section class="zodiac-container">
+      <div>
+        <a href="./zodiacs/1-aries.html" id="aries" target="_blank">
           <img src="./images/ax/01.jpg" alt="zodiac-sign-aries" />
           <p>Aries (March 21-april 19)</p></a
         >
       </div>
-      <div class="zodiac">
-        <a href="./zodiacs/2-taurus.html" target="_blank">
+      <div>
+        <a href="./zodiacs/2-taurus.html" id="taurus" target="_blank">
           <img src="./images/ax/02.jpg" alt="zodiac-sign-taurus" />
           <p>Taurus (April 20 - May 20)</p></a
         >
       </div>
-      <div class="zodiac">
-        <a href="./zodiacs/3-gemini.html" target="_blank">
+      <div>
+        <a href="./zodiacs/3-gemini.html" id="gemini" target="_blank">
           <img src="./images/ax/03.jpg" alt="zodiac-sign-gemini" />
           <p>Gemini (May 21 - June 20)</p></a
         >
       </div>
-      <div class="zodiac">
-        <a href="./zodiacs/4-cancer.html" target="_blank"
+      <div>
+        <a href="./zodiacs/4-cancer.html" id="cancer" target="_blank"
           ><img src="./images/ax/04.jpg" alt="zodiac-sign-cancer" />
           <p>Cancer (June 21 - July 22)</p></a
         >
       </div>
-      <div class="zodiac">
-        <a href="./zodiacs/5-leo.html" target="_blank">
+      <div>
+        <a href="./zodiacs/5-leo.html" id="leo" target="_blank">
           <img src="./images/ax/05.jpg" alt="zodiac-sign-leo" />
           <p>Leo (July 23 - August 22)</p></a
         >
       </div>
-      <div class="zodiac">
-        <a href="./zodiacs/6-virgo.html" target="_blank">
+      <div>
+        <a href="./zodiacs/6-virgo.html" id="virgo" target="_blank">
           <img src="./images/ax/06.jpg" alt="zodiac-sign-virgo" />
           <p>Virgo (August 23-september 22)</p></a
         >
       </div>
-      <div class="zodiac">
-        <a href="./zodiacs/7-libra.html" target="_blank">
+      <div>
+        <a href="./zodiacs/7-libra.html" id="libra" target="_blank">
           <img src="./images/ax/07.jpg" alt="zodiac-sign-libra" />
           <p>Libra (September 23-october 22)</p></a
         >
       </div>
-      <div class="zodiac">
-        <a href="./zodiacs/8-scorplo.html" target="_blank">
+      <div>
+        <a href="./zodiacs/8-scorplo.html" id="scorplo" target="_blank">
           <img src="./images/ax/08.jpg" alt="zodiac-sign-scorplo" />
           <p>Scorpio (October 23-november 21)</p></a
         >
       </div>
-      <div class="zodiac">
-        <a href="./zodiacs/9-sagittarius.html" target="_blank"
+      <div>
+        <a href="./zodiacs/9-sagittarius.html" id="sagittarius" target="_blank"
           ><img src="./images/ax/09.jpg" alt="zodiac-sign-sagittarius" />
           <p>Sagittarius (November 22-december 21)</p></a
         >
       </div>
-      <div class="zodiac">
-        <a href="./zodiacs/10-capricorn.html" target="_blank">
+      <div>
+        <a href="./zodiacs/10-capricorn.html" id="capricorn" target="_blank">
           <img src="./images/ax/10.jpg" alt="zodiac-sign-capricorn" />
           <p>Capricorn (December 22-january 19)</p></a
         >
       </div>
-      <div class="zodiac">
-        <a href="./zodiacs/11-aquarius.html" target="_blank">
+      <div>
+        <a href="./zodiacs/11-aquarius.html" id="aquarius" target="_blank">
           <img src="./images/ax/11.jpg" alt="zodiac-sign-aquarius" />
           <p>Aquarius (January 20-february 18)</p></a
         >
       </div>
-      <div class="zodiac">
-        <a href="./zodiacs/12-pisces.html" target="_blank">
+      <div>
+        <a href="./zodiacs/12-pisces.html" id="pisces" target="_blank">
           <img src="./images/ax/12.jpg" alt="zodiac-sign-pisces" />
           <p>Pisces (February 19-march 20)</p></a
         >
       </div>
     </section>
+
     <!-- birth-chart -->
     <div class="container-form" id="birth-chart">
       <h1>Create Your Astrology Birth Chart</h1>
@@ -154,20 +160,23 @@ love, and peace...</pre
         show declinations, sidereal charts and more...
       </p>
     </div>
-    <div >
+    <div>
       <form action="#">
         <fieldset>
           <legend>FILL IN YOUR DETAILS</legend>
           <div>
             <label for="name">My name is:</label>
-            <input type="text" name="name" id="name" placeholder="Please enter your name"/>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Please enter your name"
+            />
           </div>
           <div>
             <label for="country">I was born in:</label>
             <select name="country" id="country">
-              <option value="">
-                Select your Country!
-              </option>
+              <option value="">Select your Country!</option>
               <option value="germany">Germany</option>
               <option value="iran">Iran</option>
               <option value="china">China</option>
@@ -179,7 +188,7 @@ love, and peace...</pre
               <option value="japan">Japan</option>
               <option value="malaysia">Malaysia</option>
               <option value="morocco">Morocco</option>
-            </select>   
+            </select>
           </div>
           <div class="date">
             <label for="birth">My date of birth is:</label>
@@ -190,7 +199,7 @@ love, and peace...</pre
           </div>
           <div>
             <button>
-            <a href="./chart/b-chart.html">CREAT A CHART</a>
+              <a href="./chart/b-chart.html">CREAT A CHART</a>
             </button>
           </div>
         </fieldset>
@@ -220,11 +229,20 @@ love, and peace...</pre
     </section>
     <footer>
       <div>
-        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-2xl"></i></a>
-        <a href="https://web.telegram.org"><i class="fa-brands fa-telegram fa-2xl"></i></a>
+        <a href="https://www.facebook.com/"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+        <a href="https://www.instagram.com/"
+          ><i class="fa-brands fa-instagram fa-2xl"></i
+        ></a>
+        <a href="https://www.youtube.com"
+          ><i class="fa-brands fa-youtube fa-2xl"></i
+        ></a>
+        <a href="https://web.telegram.org"
+          ><i class="fa-brands fa-telegram fa-2xl"></i
+        ></a>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -9,7 +9,8 @@
 body {
   background-color: black;
   font-family: "Parkinsans", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
   overflow-x: hidden;
 }
 header {
@@ -34,12 +35,15 @@ header {
     padding: 2rem;
     font-size: 1.8rem;
   }
+
   .dropdown {
     position: relative;
   }
   .dropdown-menu {
     opacity: 0;
     position: absolute;
+    top: 0;
+    margin-top: 2rem;
   }
   .dropdown-menu:hover {
     opacity: 1;
@@ -47,16 +51,14 @@ header {
     background-color: #fff4f4a9;
     width: 200px;
   }
-}
+  a {
+    text-decoration: none;
+    color: #887927;
+  }
 
-a {
-  text-decoration: none;
-  color: #887927;
-}
-
-a:hover {
-  color: gold;
-  text-shadow: 0 0.2rem 0.5rem gold;
+  a:hover {
+    color: gold;
+  }
 }
 
 .container {
@@ -82,6 +84,7 @@ a:hover {
 }
 .zodiac-circle {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   border-radius: 50%;
   width: 800px;
@@ -112,32 +115,38 @@ a:hover {
   width: 80%;
   margin: 15rem auto;
   padding: 10rem 0;
-  a {
-    text-decoration: none;
-  }
-  a:hover {
-    color: orangered;
-    text-shadow: 0 0.2rem 0.2rem gray;
-  }
 }
-.zodiac {
-  width: 300px;
-
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: orangered;
+  text-shadow: 0 0.2rem 0.2rem #a17d39;
+}
+.zodiac-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  gap: 2rem;
+  width: 80%;
+  margin: 15rem auto;
+  padding: 10rem 0;
   img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    margin: 0 6rem 0;
+  }
+  img:hover {
+    box-shadow: 0 1px 1rem 6px #806d02;
+    transform: scale(1.05);
   }
   p {
-    text-align: center;
-    padding-top: 1rem;
+    margin: auto;
     color: white;
+    text-align: center;
+    margin-top: 1rem;
   }
-}
-
-.zodiac:hover {
-  box-shadow: 0 0.2rem 0.5rem 0.1rem #806d02;
-  transform: scale(1.05);
 }
 
 .container-form {
@@ -213,10 +222,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-
   a {
+    color: #e9d358;
     margin: 2rem 0.5rem;
     align-items: center;
+  }
+  a:hover {
+    color: #75530b;
   }
 }
 
@@ -229,5 +241,18 @@ footer {
   }
   header {
     flex-direction: column;
+  }
+  .navbar .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    display: none;
+    padding: 1rem;
+  }
+  .navbar .nav-links.active {
+    display: flex;
   }
 }
