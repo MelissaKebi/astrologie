@@ -81,10 +81,3 @@ astrologie/
 ## 📄 License
 
 This project is for educational and non-commercial use. You are free to modify and use it for personal projects.
-
----
-
-## 👤 Author
-
-- Student @ DCI
-- Project folder: `Documents/DCI/UIB/astrologie`
