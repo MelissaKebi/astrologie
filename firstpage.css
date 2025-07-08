@@ -178,6 +178,7 @@ a:hover {
   padding: 5rem;
   h1 {
     margin: 5rem;
+    width: 100%;
     color: #e9d358;
     text-shadow: 0 0.2rem 0.3rem gold;
   }
