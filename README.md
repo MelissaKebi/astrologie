@@ -13,7 +13,7 @@ astrologie/
 ├── node_modules/ # Node.js dependencies (if applicable)
 ├── zodiacs/ # Pages or data for individual zodiac signs
 │
-├── firstpage.html # Main landing page (Home)
+├── index.html # Main landing page (Home)
 ├── meditation.html # Meditation page (calming resources)
 ├── podcast.html # Astrology-themed podcasts
 ├── firstpage.css # Styles for the main page
